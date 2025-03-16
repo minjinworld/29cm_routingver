@@ -6,7 +6,7 @@
 
 🚀 배포 링크
 
-👉 데모 사이트 보기 (배포한 경우 여기에 링크 추가)
+👉 https://29cm-routingver.vercel.app/
 
 🛠 기술 스택
 
