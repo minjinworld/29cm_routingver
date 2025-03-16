@@ -1,40 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+29CM 클론 코딩 프로젝트
 
-## Getting Started
+📌 프로젝트 소개
 
-First, run the development server:
+이 프로젝트는 29CM 쇼핑몰 웹사이트를 클론 코딩한 프로젝트입니다. Next.js 기반으로 개발되었으며, 페이지 라우팅, 상태 관리, UI 구현을 포함하여 실제 서비스와 유사한 사용자 경험을 제공하는 것을 목표로 했습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 배포 링크
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 데모 사이트 보기 (배포한 경우 여기에 링크 추가)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🛠 기술 스택
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+프레임워크 & 라이브러리: Next.js, React, React-DOM
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+스타일링: CSS Modules / Styled-components (선택한 스타일링 기법 명시)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+상태 관리: useState, useEffect, useRef
 
-## Learn More
+라우팅: Next.js 내장 라우팅 (pages 기반 라우팅)
 
-To learn more about Next.js, take a look at the following resources:
+📁 폴더 구조
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+📂 29cm/
+ ├── 📂 pages/         # Next.js 페이지 라우팅
+ │   ├── index.js     # 홈 페이지
+ │   ├── product.js   # 상품 상세 페이지
+ │   ├── cart.js      # 장바구니 페이지
+ ├── 📂 components/    # 재사용 가능한 UI 컴포넌트
+ │   ├── Header.js    # 헤더
+ │   ├── Footer.js    # 푸터
+ │   ├── ProductCard.js # 상품 카드 컴포넌트
+ ├── 📂 styles/       # 스타일 관련 파일
+ │   ├── globals.css  # 전역 스타일
+ ├── 📂 public/       # 정적 파일 (이미지, 아이콘 등)
+ ├── package.json    # 프로젝트 정보 및 의존성 관리
+ ├── next.config.mjs # Next.js 설정 파일
+ ├── README.md       # 프로젝트 설명
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🌟 주요 기능
 
-## Deploy on Vercel
+홈 페이지 - 상품 목록을 표시하며, 각 상품 클릭 시 상세 페이지로 이동
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+상품 상세 페이지 - 상품 정보 및 구매 옵션 제공
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+수량 조절 기능 - useState를 활용하여 플러스/마이너스 버튼 클릭 시 수량 증가 및 감소
+
+반응형 디자인 - 다양한 화면 크기에 최적화
+
+📌 개발 과정
+
+Next.js의 페이지 라우팅 활용: pages/ 디렉터리 구조를 기반으로 자동 라우팅을 설정
+
+useRef & useEffect 활용: 특정 UI 요소의 동작을 제어하기 위해 사용
+
+SEO 최적화: Next.js의 head 태그를 활용하여 메타 태그 설정
+
+✨ 배운 점 & 개선할 점
+
+Next.js의 SSR(Server-Side Rendering)과 CSR(Client-Side Rendering) 차이점 이해
+
+React의 상태 관리와 useRef를 이용한 DOM 직접 조작 경험
+
+향후 개선할 부분: API 연동을 추가하여 더 동적인 데이터 처리
+
+📜 라이선스
+
+이 프로젝트는 개인 학습 목적으로 제작되었으며, 상업적 이용은 금지됩니다.
+
